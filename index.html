@@ -7,13 +7,23 @@
   </head>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <body class="bg-black text-white">
-    <div class="flex justify-center items-center h-screen gap-x-40">
-      <h1 class="text-7xl">Anthony Argatoff</h1>
+  <body class="bg-black text-white font-[Open_Sans]">
+
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl">
+        <li class="hover:text-slate-400">Home</li>
+        <li class="hover:text-slate-400">Projects</li>
+      </ul>
+    </nav>
+
+    <div class="flex justify-center items-center h-[calc(100vh-3rem)] gap-x-40">
+      <div class="flex justify-center items-center flex-col gap-y-5">
+        <h1 class="text-7xl">Anthony Argatoff</h1>
+        <p>Software Engineer</p>
+      </div>
       <div
-        class="h-100 w-100 text-center flex justify-center items-center bg-white text-black rounded-full"
-      >
-        Photo
+        class="w-120 h-120 overflow-hidden rounded-xl">
+        <img src="./IMG_0709.JPG" alt="Anthony Headshot" class="max-w-200 mt-[-6rem] ml-[-9rem]" />
       </div>
     </div>
 
