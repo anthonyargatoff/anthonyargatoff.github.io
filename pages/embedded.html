@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Systems</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-[Montserrat]">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="pb-10">
+      <h1 class="text-4xl text-center my-8">Embedded Systems</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg font-[Helvetica]"
+      >
+        <p>
+          In our embedded systems class, we decided to create a monstrosity; a fire seeking robot. This robot attempts to find the nearest flame source, then will drive towards it. As a prototype, this is all it does, but its intended use would be to extinguish fires remotely.
+        </p>
+        <p>We used Python to program the device. We developed an algorithm that will run different types of search patterns, based on elapsed time. For example, it will initially do a quick 360 turn. Then, it will continue with a spiral search pattern. If nothing is found in a given time frame, the unit will rest. If ever it detects a flame, it will navigate directly to the source.</p>
+        <p>The onboard device is a raspberry pi 4, accompanied with a motor controller, a power bank, and infrared sensors.</p>
+        <p>Below is the prototype construction.</p>
+        <div class="flex justify-center"><img src="/images/embedded1.JPG" alt=""></div>
+      </div>
+    </main>
+  </body>
+</html>
