@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redactics</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-[Montserrat]">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="font-[Helvetica] pb-10">
+      <h1 class="text-4xl text-center my-8">UBC Department Manager</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg"
+      >
+        <p>
+          I took a software maintenance course during my final year at UBC. This
+          course involved working on an existing codebase, this codebase I
+          inherited from a previous capstone group project. The application aims
+          to improve department management, and is currently in use today.
+        </p>
+        <p>
+          The project uses the
+          <a class="underline text-blue-500" href="https://laravel.com/"
+            >Laravel</a
+          >
+          framework, which is PHP based. My time was spent between bug fixes,
+          adding features, database migrations, code refactoring, documentation,
+          and testing.
+        </p>
+        <p>
+          A significant modification was to alter the database structure so that
+          we could store historic course and instructor records. This migration
+          created a lot of problems in the application. So, after I completed
+          the migration, I began fixing the rest of the application, so that it
+          used the new database relations.
+        </p>
+        <p></p>
+        <p>Below are some pictures, and some commentary.</p>
+        <p>
+          When I first started, each instance of a table had some sort of
+          different, inconsistent styling, which happens when 5 people are
+          working on the same project. I've created a consistent styling between
+          them with re-usable
+          <a
+            class="text-blue-500 underline"
+            href="https://laravel.com/docs/12.x/blade#components"
+            >blade components</a
+          >.
+        </p>
+        <img src="/images/department1.png" alt="department1" />
+        <img src="/images/department2.png" alt="department2" />
+        <p>
+          After the database migration, I created a new page to view course
+          details.
+        </p>
+        <img src="/images/department3.png" alt="dept3" />
+        <p>
+          I heavily modified the instructor dashboard. It showcases archived and
+          non-archived data entries, with nice charts at the bottom.
+        </p>
+        <img src="/images/department4.png" alt="dept4" />
+      </div>
+    </main>
+  </body>
+</html>
