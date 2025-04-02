@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClearJar</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-[Montserrat]">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="font-[Helvetica] pb-10">
+      <h1 class="text-4xl text-center my-8">ClearJar Capstone Project</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg"
+      >
+        <p>
+          My 4th year capstone project at UBC involved building an AI web application, focusing on delivering financial advice to users. We build this project for <a class="underline text-blue-500" href="https://www.linkedin.com/in/davidosemwegie/?originalSubdomain=ca">ClearJar</a>, a startup company run by a recent UBC graduate. The goal was create a chatbot that can answer user specific questions about the user's finances. It tried to replicate the experience and advice someone would get by visiting their own financial assistant.
+        </p>
+        <p>There are many levels to this project. First we used a <a class="underline text-blue-500" href="https://www.pinecone.io/">vector database</a> to classify different types of transactional data based on semantic meaning. For example, when searching for data, a "coffee" and a "tea" would be close by in the 3D vector space. Then, we managed bank connections through <a class="underline text-blue-500" href="https://plaid.com/">Plaid</a>, an external API service. Finally, we used <a class="underline text-blue-500" href="https://ai.google.dev/">Gemini</a>, Google's AI model, to answer the user's question, based on data retrieved through plaid and Pinecone.</p>
+        <p>Our results weren't always consistent due to many factors, including our own algorithms and AI hallucination, but overall we had excellent results when interacting with our chatbot.</p>
+        <p>Here are some screenshots of the application</p>
+        <img src="/images/capstone1.png" alt="">
+        <img src="/images/capstone2.png" alt="">
+        <img src="/images/capstone3.png" alt="">
+      </div>
+    </main>
+  </body>
+</html>
